@@ -76,6 +76,8 @@ read_letter <- function(xml_path) {
   
  # ваш код здесь
    
+# Прочтите все письма в один тиббл при помощи map_dfr(). 
+  letters_tbl <- map_dfr(my_xmls, read_letter)
 
 # Прочтите все письма в один тиббл при помощи map_dfr(). 
 letters_tbl <- map_dfr(my_xmls, read_letter)# ваш код здесь
