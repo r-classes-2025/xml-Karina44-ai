@@ -25,7 +25,7 @@ ns <- xml_ns(doc)
 
   
 # дата письма
-date <- <- xml_find_first(doc,"//d1:correspAction[@type = 'sending']//d1:date", ns) |>
+date <- xml_find_first(doc,"//d1:correspAction[@type = 'sending']//d1:date", ns) |>
     xml_attr("when")
   
   print(date)
